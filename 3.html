@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Perserta</title>
+
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: lightblue;
+      }
+
+      .card-table {
+        background-color: white;
+        padding: 25px;
+        border-radius: 13px;
+        box-shadow: 0 0 3px black;
+        width: 80%;
+        max-width: 8000px;
+        margin: 100px auto;
+      }
+
+      h2,
+      p {
+        text-align: center;
+      }
+
+      .table {
+        width: 100%;
+        border-collapse: collapse; /* menghilangkan border kecil di table*/
+        margin-top: 20px;
+        font-size: 15px;
+        text-align: center;
+      }
+
+      .table thead tr {
+        background-color: grey;
+        color: white;
+        text-align: center;
+      }
+
+      .table th,
+      .table td {
+        border-bottom: 1px solid white;
+        padding: 12px 15px;
+        border: 1px solid;
+
+        .btn-tambah {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: wheat;
+          color: white;
+          text-decoration: none;
+          border-radius: 5px;
+          font-weight: bold;
+          font-size: 14px;
+          transition: background 0.3s;
+        }
+      }
+
+      /*  */
+      .btn-plus {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-table">
+      <h2>Data Perserta</h2>
+      <p>Data berikut adalah data perserta</p>
+
+      <div class="btn-plus">
+        <a href="2.html" class="btn-tambah"> + Tambah Perserta </a>
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Email</th>
+            <th>No Telp</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>M Fajri</td>
+            <td>mfajribk@gmail.com</td>
+            <td>080989999</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>M Fajri 1</td>
+            <td>mfajribk1@gmail.com</td>
+            <td>080989999</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>M Fajri 2</td>
+            <td>mfajrib2k@gmail.com</td>
+            <td>080989999</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>M Fajri 3</td>
+            <td>mfajrib3k@gmail.com</td>
+            <td>080989999</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

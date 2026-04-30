@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Participant</title>
+
+    <!-- css : cascading style sheet()
+         css : 3 (internal, external, inline)
+         internal : ada di dalam file html
+         extermal :css yang ada di file ber extention css
+         inline : css nya dijadikan attr dengan style
+-->
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: silver;
+        }
+         
+        h2 {
+            color: darkcyan;
+        }
+
+        p {
+            color: darkcyan;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 4px;
+            font-weight: 550;
+            font-size: 15px;
+        }
+
+        input[type='text'],
+        input[type='email'],
+        input[type='number'] {
+            width: 50%;
+            padding: 12px 15px ;
+            border-radius: 10px;
+            outline: none;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            border-color: darkblue;
+        }
+
+        button {
+            width: 50%;
+            border-radius: 10px;
+        }
+
+        .btn-submit {
+            padding: 10px;
+            background-color: darkolivegreen;
+            ;
+        }
+        
+        .btn-reset {
+            padding: 10px;
+            background-color: darkred;
+            ;
+        }
+
+        .btn-submit:hover {
+            background-color: green;
+            color: wheat;
+        }
+
+        .btn-reset:hover {
+            background-color: red;
+            color: wheat;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h2>Pendaftaran Siswa</h2> 
+    <p>Silahkan isi data diri anda</p>
+
+    <form method="post" action="3.html"> 
+        <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" placeholder="Masukkan Nama" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Contoh: admin@gmail.com" required>
+        </div>
+        <div class="form-group">
+            <label for="nama">No. Telp</label>
+            <input type="number" placeholder="0812394759839" required>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn-submit">Simpan</button>
+            <button type="reset" class="btn-reset">Clear</button>
+            <!-- <input type="reset" class="btn-submit" value="Batal"> -->
+        </div>
+
+        
+    </form>
+</body>
+</html>
