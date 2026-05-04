@@ -1,0 +1,82 @@
+<!-- DON'T COPY-PASTE — understand first, type manually -->
+
+<!-- === [DOCUMENT SETUP] === -->
+<!-- Memberi tahu browser bahwa ini adalah dokumen HTML5 terbaru -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Wajib untuk Responsive Design, agar web menyesuaikan ukuran layar HP -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+
+    <!-- Memanggil file CSS Bootstrap dari internet (CDN) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Memanggil file CSS buatanmu sendiri (harus ditaruh di bawah Bootstrap agar bisa menimpa/override) -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- === [MAIN LAYOUT] === -->
+    <!-- container-fluid: Bungkus utama agar memenuhi 100% lebar layar -->
+    <div class="container-fluid bg-1">
+      <!-- row: Membuat baris. 
+             vh-100: Tinggi baris adalah 100% tinggi layar (Viewport Height).
+             d-flex justify-content-center align-items-center: Kombinasi maut untuk menaruh apapun persis di tengah layar! -->
+      <div class="row d-flex justify-content-center align-items-center vh-100">
+        <!-- col-12 col-md-4: Sistem Grid. Layar HP (12 kolom/full), Layar Laptop (4 kolom) -->
+        <div class="col-12 col-md-4">
+          <!-- === [CARD COMPONENT] === -->
+          <!-- Komponen Card Bootstrap untuk membuat kotak putih pembungkus form -->
+          <div class="card">
+            <div class="card-header">
+              <h4 class="text-center">Login</h4>
+            </div>
+
+            <!-- card-body SEKARANG BERADA DI DALAM div.card (Sudah Diperbaiki) -->
+            <div class="card-body mb-2">
+              <!-- === [LOGIN FORM] === -->
+              <form action="" method="post">
+                <div class="mb-2">
+                  <!-- for="emailInput" terhubung ke id="emailInput" -->
+                  <label for="emailInput">Email</label>
+                  <input
+                    type="email"
+                    id="emailInput"
+                    name="email"
+                    class="form-control"
+                  />
+                </div>
+                <div class="mb-2">
+                  <label for="passwordInput">Password</label>
+                  <!-- type diubah jadi huruf kecil: "password" agar tulisan menjadi titik-titik rahasia -->
+                  <input
+                    type="password"
+                    id="passwordInput"
+                    name="password"
+                    class="form-control"
+                  />
+                </div>
+
+                <!-- Tambahan w-100 agar tombol memenuhi lebar kotak form -->
+                <button
+                  type="submit"
+                  class="btn btn-outline-success btn-sm w-100"
+                >
+                  LOGIN
+                </button>
+              </form>
+            </div>
+          </div>
+          <!-- Penutup div.card dipindah ke sini -->
+        </div>
+      </div>
+    </div>
+
+    <!-- === [SCRIPTS] === -->
+    <!-- File JavaScript Bootstrap, ditaruh tepat sebelum tag </body> penutup -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

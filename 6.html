@@ -1,0 +1,99 @@
+<!-- DON'T COPY-PASTE — understand first, type manually -->
+
+<!-- === [DOCUMENT SETUP] === -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Admin</title>
+
+    <!-- Memanggil CSS Bootstrap. 
+         Kapan digunakan? Selalu taruh di dalam <head> agar desain dimuat sebelum konten badannya muncul -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- PENUTUP HEAD HARUS DI SINI -->
+
+  <!-- ===[BODY AREA] === -->
+  <body>
+    <!-- === [NAVBAR SECTION] === -->
+    <!-- navbar-expand-lg: Kapan digunakan? Saat kita ingin menu berjejer lurus di layar besar (Laptop), 
+         dan berubah jadi tombol "hamburger" di layar kecil (HP). "lg" = Large. -->
+    <!-- data-bs-theme="dark": Tema gelap bawaan Bootstrap 5. -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <!-- navbar-brand: Digunakan untuk logo atau nama aplikasi di pojok kiri atas -->
+        <a class="navbar-brand" href="#">Navbar</a>
+
+        <!-- === [HAMBURGER BUTTON] === -->
+        <!-- Tombol ini HANYA terlihat di layar HP. 
+             data-bs-toggle="collapse": Instruksi untuk JS Bootstrap agar fitur buka-tutup (collapse) diaktifkan.
+             data-bs-target="#navbarNavAltMarkup": Menunjuk ID mana yang akan dibuka-tutup oleh tombol ini. -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- === [NAVBAR MENU ITEMS] === -->
+        <!-- id ini wajib sama persis dengan data-bs-target pada tombol di atas -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <!-- ms-auto: "Margin Start Auto". Digunakan untuk mendorong semua menu ini mentok ke sebelah kanan -->
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Pricing</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===[MAIN LAYOUT (SIDEBAR + CONTENT)] === -->
+    <!-- d-flex: Display Flex. 
+         Kapan digunakan? Saat kamu ingin membuat elemen-elemen di dalamnya berbaris dari KIRI ke KANAN (bukan atas ke bawah). -->
+    <div class="d-flex">
+      <!-- === [SIDEBAR SECTION] === -->
+      <!-- w-25: Width 25%. Lebar sidebar ini mengambil 25% layar.
+           vh-100: Viewport Height 100%. Tingginya mentok dari ujung atas ke ujung bawah layar.
+           p-3: Padding 3. Memberi ruang kosong di dalam kotak agar teks tidak menempel ke garis pinggir.
+           border-end: Memberi garis batas lurus di sebelah kanan sidebar. -->
+      <aside class="sidebar bg-light border-end p-3 w-25 vh-100">
+        <!-- nav-pills: Gaya menu Bootstrap yang membentuk kotak membulat saat di-klik.
+             flex-column: Memaksa menu ini barisnya ke BAWAH, bukan ke samping.
+             gap-1: Memberi jarak (spasi) antar menu. -->
+        <!-- KESALAHAN KECIL: Kamu menulis w-700. Di Bootstrap tidak ada w-700. 
+             Class untuk lebar di Bootstrap adalah w-25, w-50, w-75, w-100. Jadi w-700 sudah saya hapus. -->
+        <ul class="nav nav-pills flex-column gap-1">
+          <li class="nav-item">
+            <a href="" class="nav-link active">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">User</a>
+          </li>
+          <!-- Tombol Logout diberi margin-top otomatis agar terpisah -->
+          <li class="nav-item mt-4">
+            <a href="" class="btn btn-danger w-100">Logout</a>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- === [MAIN CONTENT SECTION] === -->
+      <!-- w-100: Digunakan agar area konten utama ini mengambil SISA ruang layar secara penuh. -->
+      <main class="content p-4 w-100">
+        <h3>Dashboard</h3>
+        <p>Welcome!!</p>
+      </main>
+    </div>
+
+    <!-- === [SCRIPTS] === -->
+    <!-- Script WAJIB berada di dalam body, tepat sebelum tag penutup </body> 
+         agar tidak menunda kemunculan tampilan web saat di-load oleh user. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

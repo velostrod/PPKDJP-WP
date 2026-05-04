@@ -1,40 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portofolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <section class="parallax bg-1">
-        <div class="content">
-            <h1>Halo, saya M Fajri Budi Kusuma</h1>
-            <p>Web Programmer PPKD Jakarta Pusat</p>
-        </div>
+      <div class="content">
+        <h1>
+          Halo,<br />
+          My name is M Fajri Budi Kusuma
+        </h1>
+        <img src="img/images1.jpg" class="profile-img" alt="" />
+        <p>Web Programmer PPKD Jakarta Pusat</p>
+      </div>
     </section>
     <section class="normal-section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Saya sedang mempelajari Web Programming di PPKD Jakarta Pusat</p>
-        </div>
+      <div class="container">
+        <h2>About Me</h2>
+        <!-- <p>Saya sedang mempelajari Web Programming di PPKD Jakarta Pusat</p> -->
+        <!-- harus perhatikan juga posisi class itu masuk kedalam kurung mana -->
+
+        <img class="icon" src="img/icon.jpg" alt="" />
+        <img class="icon" src="img/icon.jpg" alt="" />
+        <img class="icon" src="img/icon.jpg" alt="" />
+        <img class="icon" src="img/icon.jpg" alt="" />
+      </div>
     </section>
     <section class="parallax bg-2">
-        <div class="content">
-            <h2>My Skill</h2>
-            <p>Cost Accounting, CVP Analyst, Gross Profit Analyst, Basic Web Programming</p>
+      <div class="content">
+        <h2>My Skill and Experience</h2>
+        <div class="wraper">
+          <div class="skill-wraper">
+            <h3>Skill</h3>
+            <!-- jika menggunakan list <li> harus ada <ul> -->
+            <ul>
+              <li>CVP Analyst</li>
+              <li>Cost Analyst</li>
+              <li>Gross Profit Analyst</li>
+            </ul>
+          </div>
+          <div class="skill-wraper">
+            <h3>Experience</h3>
+            <!-- jika menggunakan list <li> harus ada <ul> -->
+            <ul>
+              <li>Accounting Inventory</li>
+              <li>Cost Control Project</li>
+              <li>Accounting Support</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
-     <section class="normal-section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Tertarik bekerja sama? Kirimkan pesan melalui email atau media social berikut</p>
-            <button class="btn-contact"> Kirim Pesan</button>
-        </div>
+    <section class="normal-section">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>
+          Tertarik bekerja sama? Kirimkan pesan melalui email atau media social
+          berikut
+        </p>
+        <form action="" method="post" class="contact-form">
+          <input type="text" name="name" placeholder="Isi Nama anda" />
+          <input type="email" name="email" placeholder="masukan email Anda" />
+          <textarea name="message" cols="30" rows="10" id=""></textarea>
+          <button type="submit">Kirim</button>
+        </form>
+        <!-- <button class="btn-contact">Kirim Pesan</button> ini salah -->
+      </div>
     </section>
     <footer>
-        <p>&copy; 2026 Personal Brand, Dibuat di PPKD Jakarta Pusat</p>
+      <p>&copy; 2026 Personal Brand, Dibuat di PPKD Jakarta Pusat</p>
     </footer>
-</body>
+  </body>
 </html>
-
