@@ -146,7 +146,11 @@ textarea {
 }
 
 .card-body label {
+<<<<<<< HEAD
   color: black;
+=======
+  color: whitesmoke;
+>>>>>>> 9e694bddb4528c494b65db7bd18023598e2f10ff
 }
 
 .card-body button {
