@@ -1,3 +1,5 @@
+<!-- Tidak pakai bootstrap, jika pakai bootstrap penamaan class harus hati hati -->
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -6,30 +8,47 @@
     <title>Personal Portofolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <section class="parallax bg-1">
+    <header class="navbar">
+      <div class="nav-container">
+        <h2 class="logo">My Portofolio</h2>
+        <button onclick="toggleMenu()">☰</button>
+        <nav id="menu">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skillexp">Skill & Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="parallax bg-1">
       <div class="content">
-        <h1>
-          Halo,<br />
-          My name is M Fajri Budi Kusuma
-        </h1>
+        <h1>Halo, My name is M Fajri Budi Kusuma</h1>
         <img src="img/images1.jpg" class="profile-img" alt="" />
         <p>Web Programmer PPKD Jakarta Pusat</p>
       </div>
     </section>
-    <section class="normal-section">
+    <section id="about" class="normal-section">
       <div class="container">
         <h2>About Me</h2>
         <!-- <p>Saya sedang mempelajari Web Programming di PPKD Jakarta Pusat</p> -->
         <!-- harus perhatikan juga posisi class itu masuk kedalam kurung mana -->
-
-        <img class="icon" src="img/icon.jpg" alt="" />
-        <img class="icon" src="img/icon.jpg" alt="" />
-        <img class="icon" src="img/icon.jpg" alt="" />
-        <img class="icon" src="img/icon.jpg" alt="" />
+        <!-- membuat class gallery agar ada interactive di css -->
+        <div class="gallery">
+          <img src="img/japan1.jpg" alt="" />
+          <img src="img/japan2.jpg" alt="" />
+          <img src="img/japan3.jpg" alt="" />
+          <img src="img/japan4.jpg" alt="" />
+        </div>
+        <p>
+          Saya adalah seorang lulusan akuntansi dan juga sedang belajar Web
+          Program di PPKD jakarta
+        </p>
       </div>
     </section>
-    <section class="parallax bg-2">
+    <section id="skillexp" class="parallax bg-2">
       <div class="content">
         <h2>My Skill and Experience</h2>
         <div class="wraper">
@@ -54,7 +73,7 @@
         </div>
       </div>
     </section>
-    <section class="normal-section">
+    <section id="contact" class="normal-section">
       <div class="container">
         <h2>Contact Me</h2>
         <p>
@@ -73,5 +92,11 @@
     <footer>
       <p>&copy; 2026 Personal Brand, Dibuat di PPKD Jakarta Pusat</p>
     </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("show");
+      }
+    </script>
   </body>
 </html>
