@@ -50,5 +50,27 @@ body {
 }
 
 .soft-shadow {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
+
+.project-card {
+  background-color: white;
+  border: 1px solid #c2c6d6;
+  border-radius: 16px;
+  transition: 0.3s;
+  padding: 30px;
+}
+
+.project-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+}
+
+.badge-tech {
+  background-color: rgba(0, 88, 190, 0.5);
+  color: var(--primary-color);
+  border: 1px solid rgba(0, 88, 190, 0.1);
+  font-size: 12px;
+  font-weight: 700;
+}
+
