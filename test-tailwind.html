@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+
+  <body class="font-inter text-on-surface selection:bg-primary/35">
+    <nav
+      class="fixed top-0 left-0 w-full bg-surface border-b border-outline-variant py-4 px-gutter mx-auto flex justify-between item-center z-50">
+      <div class="flex items-center gap-4">
+        <span class="text-primary font-bold">M Fajri Budi Kusuma</span>
+      </div>
+      <div class="flex items-center gap-7">
+        <a
+          href=""
+          class="font-medium text-primary border-b-2 border-primary pb-1 transition-colors duration-200"
+          >Home</a
+        >
+        <a
+          href=""
+          class="font-medium text-on-surface-variant hover:text-primary transition-colors duration-200"
+          >Experience</a
+        >
+        <a
+          href=""
+          class="font-medium text-on-surface-variant hover:text-primary transition-colors duration-200"
+          >Project</a
+        >
+        <a
+          href=""
+          class="font-medium text-on-surface-variant hover:text-primary transition-colors duration-200"
+          >Skills</a
+        >
+        <a
+          href=""
+          class="font-medium text-on-surface-variant hover:text-primary transition-colors duration-200"
+          >Contact</a
+        >
+      </div>
+      <div class="flex items-center gap-4">
+        <div></div>
+        <button
+          class="bg-primary text-on-primary px-4 py-2 rounded-lg hover:brightness-100 transition-all shadow-sm">
+          Download CV
+        </button>
+      </div>
+    </nav>
+    <main class="pt-24 min-h-screen">
+      <section
+        class="max-w-container-max mx-auto flex flex-col md:flex-row items-center px-gutter py-section-gap">
+        <!-- untuk ngatur child -->
+        <div class="flex-1 space-y-8">
+          <div class="space-y-4">
+            <span
+              class="text-primary font-bold tracking-widest uppercase block test-label-sm"
+              >Fullstack Programmer
+            </span>
+            <h1 class="text-h1 text-on-surface lg:text-6xl">
+              M Fajri Budi Kusuma
+              <span class="text-primary/80 font-bold"
+                >Fullstack Programmer
+              </span>
+            </h1>
+          </div>
+          <p
+            class="text-body-lg text-on-surface-variant max-w-xl border-l-4 border-primary/80 pl-6 leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque illo
+            aut laborum perferendis quod. Illum enim magnam explicabo quas.
+            Dolorum tempore at nam deleniti eius, quidem quos? Autem, soluta
+            saepe.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-4">
+            <button
+              class="bg-primary text-on-primary font-semibold rounded-lg px-8 py-4 hover:brightness-140 active:scale-94 transition-all shadow flex item-center gap-3">
+              <span>Download CV</span>
+              <span class="material-symbols-outlined text-[24px]"
+                >Download</span
+              >
+            </button>
+            <button
+              class="border-primary/20 text-primary font-semibold rounded-lg px-8 py-4 hover:brightness-140 active:scale-94 transition-all shadow flex item-center gap-3">
+              View project
+            </button>
+          </div>
+        </div>
+        <div class="flex-1 w-full relative">
+          <div class="aspect-square w-full max-w-lg mx-auto relative group">
+            <div
+              class="absoulute -top-4 -right-4 bg-surface-container-lowest p-4 border border-outline-variant rounded-xl z-20 hidden lg:block soft-shadow"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
