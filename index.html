@@ -1,279 +1,469 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
-    <link rel="stylesheet" href="/html-angkatan2-ppkdjp/css/fajri.css" />
 
-    <!-- google font -->
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-      rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="/html-angkatan2-ppkdjp/css/fajri.css" />
 
-  <body class="">
-    <div class="wrapper">
-      <nav
-        class="navbar navbar-expand-lg bg-body-tertiary navbar-custom fixed-top py-3">
-        <div class="container">
-          <a
-            class="navbar-brand text-primary fw-bold ms-auto text-muted"
-            href="#"
-            >Porto
-            <!-- <i class="bi bi-brightness-high fs-1"></i> -->
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarScroll"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-5 mb-lg-0 gap-lg-3">
-              <li class="nav-item">
-                <a
-                  class="nav-link-custom px-2 active"
-                  aria-current="page"
-                  href="#"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link-custom px-2" href="#Experience">Experience</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link-custom px-2" href="#">Project</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link-custom px-2" href="#">Skill</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link-custom px-2" href="#contact">Contact</a>
-              </li>
-            </ul>
-            <div class="d-flex">
-              <button class="btn btn-outline-primary fw-bold">
-                Download CV
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="">
+  <div class="wrapper">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-custom fixed-top py-3">
+      <div class="container">
+        <a class="navbar-brand text-primary fw-bold ms-auto text-muted" href="#">Porto
+          <!-- <i class="bi bi-brightness-high fs-1"></i> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-5 mb-lg-0 gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link-custom px-2 active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link-custom px-2" href="#Experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link-custom px-2" href="#">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link-custom px-2" href="#">Skill</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link-custom px-2" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <button class="btn btn-outline-primary fw-bold">
+              Download CV
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- sematik html: element html yang bisa diartikan: header, nav, main, section -->
+    <main class="pt-5" style="padding-top: 100px">
+      <section class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <span class="text-primary fw-bold text-uppercase d-block mb-4"
+              style="font-size: 14px; letter-spacing: 2px">System Architecture & Engineering
+            </span>
+            <h1 class="display-4 fw-bold mb-4">
+              M Fajri Budi Kusuma
+              <span class="text-primary-emphasis d-block opacity-75">Fullstack Programmer</span>
+            </h1>
+            <p class="border-start border-4 border-primary border-opacity-25 ps-4 text-secondary mb-5 fs-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+              maiores hic corrupti nobis veritatis eum dignissimos rerum,
+              quasi ab numquam. Accusamus excepturi delectus odio molestiae
+              harum adipisci! Dolore, expedita asperiores?
+            </p>
+            <div class="d-flex flex-wrap gap-4">
+              <button class="btn btn-primary py-3 px-4 d-flex align-items-center gap-2">
+                Download CV <span class="material-symbols-outlined"> Download </span>
+              </button>
+              <button class="btn btn-outline-primary border-opacity-25 py-3 px-4 fw-semibold">
+                View Project
+                <span class="material-symbol-outlined"></span>
               </button>
             </div>
           </div>
-        </div>
-      </nav>
 
-      <!-- sematik html: element html yang bisa diartikan: header, nav, main, section -->
-      <main class="pt-5" style="padding-top: 100px">
-        <section class="container py-5">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <span
-                class="text-primary fw-bold text-uppercase d-block mb-4"
-                style="font-size: 14px; letter-spacing: 2px"
-                >System Architecture & Engineering
-              </span>
-              <h1 class="display-4 fw-bold mb-4">
-                M Fajri Budi Kusuma
-                <span class="text-primary-emphasis d-block opacity-75"
-                  >Fullstack Programmer</span
-                >
-              </h1>
-              <p
-                class="border-start border-4 border-primary border-opacity-25 ps-4 text-secondary mb-5 fs-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-                maiores hic corrupti nobis veritatis eum dignissimos rerum,
-                quasi ab numquam. Accusamus excepturi delectus odio molestiae
-                harum adipisci! Dolore, expedita asperiores?
-              </p>
-              <div class="d-flex flex-wrap gap-4">
-                <button
-                  class="btn btn-primary py-3 px-4 d-flex align-items-center gap-2">
-                  Download CV <span class="material-symbols-outlined"> Download </span>
-                </button>
-                <button
-                  class="btn btn-outline-primary border-opacity-25 py-3 px-4 fw-semibold">
-                  View Project
-                  <span class="material-symbol-outlined"></span>
-                </button>
-              </div>
-            </div>
-
-            <!-- Penempatan untuk foto -->
-            <div class="col-lg-6">
-              <div class="position-relative mx-auto 
-              style="max-width 500px; object-fit: cover">
-                <!-- parent and child untuk foto -->
-                <div  class="hero-img-container soft-shadow">
-                    <img alt="Portrait" class="img-fluid w-100"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcs3jH7DyVlQIYjqn8_Pw4opUFgywl-aVkjx8-Eo8QeLPN2tys6X_JF7WvCpXcOOh4hqL2qovw0Z81TJjaGvgaJVTRtJo7MNCbr5NufCddRcL9HhlpSCa14o7i_C9HECux28B-VCmLJNAAAg2JCnVfhzXpKQbZQ17xCJa-J7ITR_4GLgMVnaAQY9L4UY7aC4QCUAKv6wXj_fRcoGMFTyAdoUJ-ptrZ1ka60yx5hEGnaQlq6A12b-E_2U8XXjHyRzfsm9vICya9HnQ5">
-                </div>
+          <!-- Penempatan untuk foto -->
+          <div class="col-lg-6">
+            <div class="position-relative mx-auto 
+              style=" max-width 500px; object-fit: cover">
+              <!-- parent and child untuk foto -->
+              <div class="hero-img-container soft-shadow">
+                <img alt="Portrait" class="img-fluid w-100"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcs3jH7DyVlQIYjqn8_Pw4opUFgywl-aVkjx8-Eo8QeLPN2tys6X_JF7WvCpXcOOh4hqL2qovw0Z81TJjaGvgaJVTRtJo7MNCbr5NufCddRcL9HhlpSCa14o7i_C9HECux28B-VCmLJNAAAg2JCnVfhzXpKQbZQ17xCJa-J7ITR_4GLgMVnaAQY9L4UY7aC4QCUAKv6wXj_fRcoGMFTyAdoUJ-ptrZ1ka60yx5hEGnaQlq6A12b-E_2U8XXjHyRzfsm9vICya9HnQ5">
               </div>
             </div>
           </div>
-        </section>
-        <section class="border-bottom border-top py-5 mt-5" id="Experience">
-            <div class="container">
-                <div class="row g-4 text-center text-md-start">
-                    <div class="col-6 col-md-3">
-                        <h2 class="text-primary fw-bold"> 8+
-                        </h2>
-                        <span class="text-uppercase small fw-bold text-secondary"> Years Experience</span>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <h2 class="text-primary fw-bold"> 142
-                        </h2>
-                        <span class="text-uppercase small fw-bold text-secondary"> Deployment</span>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <h2 class="text-primary fw-bold"> 12k
-                        </h2>
-                        <span class="text-uppercase small fw-bold text-secondary"> Github Stars</span>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <h2 class="text-primary fw-bold"> 99.9%
-                        </h2>
-                        <span class="text-uppercase small fw-bold text-secondary"> Uptime Averages</span>
-                    </div>
-                </div>
+        </div>
+      </section>
+      <section class="border-bottom border-top py-5 mt-5" id="Experience">
+        <div class="container">
+          <div class="row g-4 text-center text-md-start">
+            <div class="col-6 col-md-3">
+              <h2 class="text-primary fw-bold"> 8+
+              </h2>
+              <span class="text-uppercase small fw-bold text-secondary"> Years Experience</span>
             </div>
-        </section>
-        <section class="container py-5 my-5">
-            <div class="d-flex justify-content-between align-items-end mb-5">
-              <div>
-                <span class="text-primary fw-bold text-uppercase d-block mb-2" style="font-size: 13px;">Case study</span>
-                <h2 class="fw-bold">Selected Work</h2>
-              </div>
-              <a href="" class="text-decoration-none fw-bold text-primary">
-                All Project 
-                <span class="material-symbols-outlined align-middle"> arrow_forward </span>
-              </a>
+            <div class="col-6 col-md-3">
+              <h2 class="text-primary fw-bold"> 142
+              </h2>
+              <span class="text-uppercase small fw-bold text-secondary"> Deployment</span>
             </div>
-            <div class="row">
-              <div class="col-lg-8 col-6">
-                <div class="project-card d-flex justify-content-between flex-column soft-shadow">
-                  <div class="d-flex justify-content-between">
-                    <div>
-                      <h3 class="fw-bold ">Nebula Cloud Engine</h3>
-                      <div class="d-flex gap-3">
-                        <span class="badge badge-tech rounded-pill">Rust</span>
-                        <span class="badge badge-tech rounded-pill">Warm</span>
-                      </div>
-                    </div>
-                    <span class="material-symbols-outlined text-secondary">open_in_new</span>
-                  </div>
-                  <div class="mt-4 overflow-hidden rounded-3 border style">
-                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOzolMiPtJydpAjSGiS1-UqFEIQq82ya6IMnDpARsBm-Bfm3zTIctqmnptR_n9Ox-yeWTzZJ035C-2ETP9g7i8G0BqGug87Z1d5sP6IlcehKoJZ2feRVBxGnY1VBBL7KmzglyT6c84mtf8jq7JN4r4_2_jap2jhWy6FvXde6VF68rX2ijRiOMYbhIdUxpBWAaCqdnJca2lu9jjG0B36xooLDUfMFdVveT7TsEcZcCU2L0RbbNJhM0b558yywSm_eIi3uxnki3YH3sy"
-                      class="img-fluid w-100" alt="Project 1">
+            <div class="col-6 col-md-3">
+              <h2 class="text-primary fw-bold"> 12k
+              </h2>
+              <span class="text-uppercase small fw-bold text-secondary"> Github Stars</span>
+            </div>
+            <div class="col-6 col-md-3">
+              <h2 class="text-primary fw-bold"> 99.9%
+              </h2>
+              <span class="text-uppercase small fw-bold text-secondary"> Uptime Averages</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container py-5 my-5">
+        <div class="d-flex justify-content-between align-items-end mb-5">
+          <div>
+            <span class="text-primary fw-bold text-uppercase d-block mb-2" style="font-size: 13px;">Case study</span>
+            <h2 class="fw-bold">Selected Work</h2>
+          </div>
+          <a href="" class="text-decoration-none fw-bold text-primary">
+            All Project
+            <span class="material-symbols-outlined align-middle"> arrow_forward </span>
+          </a>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-6">
+            <div class="project-card d-flex justify-content-between flex-column soft-shadow">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <h3 class="fw-bold ">Nebula Cloud Engine</h3>
+                  <div class="d-flex gap-3">
+                    <span class="badge badge-tech rounded-pill">Rust</span>
+                    <span class="badge badge-tech rounded-pill">Warm</span>
                   </div>
                 </div>
+                <span class="material-symbols-outlined text-secondary">open_in_new</span>
               </div>
-              <div class="col-lg-4 col-6">
-                <div class="project-card soft-shadow">
-                  <div class="mb-4">
-                    <h3 class="fw-bold">ChiperDB</h3>
-                    <span class="badge badge-tech rounded-pill">Go
-                    </span>
-                  </div>
-                  <p class="text-secondary">High Perfomance, encrypt storage engine for sensitive finance data with </p>
-                  <div class="mt-1 overflow-hidden rounded-3 border style">
-                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzt8YAayGQxDykl4-TWSB4QdpHgRXPAga_lOMCxt2vZSrsRAiONElHG0g9tH5L1wpNcc9isi4ayPBIGJB8CKejKOnD0KcRZEOfjnOtR894o3kjTXwKsQOni0PzUogmMgbynBR2Wyq6rasUFNJ1xBz6mfbWkyZ-eoUMWYF6ApjBsW3o_B9AbNyIi95OX5mitFMw-6MsvgC3Ux59Uw4Eh-QQCILIXbvUJvIOdXJCQT4j2dLaGNRBND6iPFOIZESgO_8jx2w9uRpKhZNQ"
-                                class="img-fluid w-100" style="object-fit: cover; height: 200px;" alt="Project 2">
-                  </div>
-                </div>
+              <div class="mt-4 overflow-hidden rounded-3 border style">
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOzolMiPtJydpAjSGiS1-UqFEIQq82ya6IMnDpARsBm-Bfm3zTIctqmnptR_n9Ox-yeWTzZJ035C-2ETP9g7i8G0BqGug87Z1d5sP6IlcehKoJZ2feRVBxGnY1VBBL7KmzglyT6c84mtf8jq7JN4r4_2_jap2jhWy6FvXde6VF68rX2ijRiOMYbhIdUxpBWAaCqdnJca2lu9jjG0B36xooLDUfMFdVveT7TsEcZcCU2L0RbbNJhM0b558yywSm_eIi3uxnki3YH3sy"
+                  class="img-fluid w-100" alt="Project 1">
               </div>
             </div>
-        </section>
-        <section class="container message">
-          <div class="row">
-            <div class="project-card col-lg-8 col-md-6">
+          </div>
+          <div class="col-lg-4 col-6">
+            <div class="project-card soft-shadow">
+              <div class="mb-4">
+                <h3 class="fw-bold">ChiperDB</h3>
+                <span class="badge badge-tech rounded-pill">Go
+                </span>
+              </div>
+              <p class="text-secondary">High Perfomance, encrypt storage engine for sensitive finance data with </p>
+              <div class="mt-1 overflow-hidden rounded-3 border style">
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzt8YAayGQxDykl4-TWSB4QdpHgRXPAga_lOMCxt2vZSrsRAiONElHG0g9tH5L1wpNcc9isi4ayPBIGJB8CKejKOnD0KcRZEOfjnOtR894o3kjTXwKsQOni0PzUogmMgbynBR2Wyq6rasUFNJ1xBz6mfbWkyZ-eoUMWYF6ApjBsW3o_B9AbNyIi95OX5mitFMw-6MsvgC3Ux59Uw4Eh-QQCILIXbvUJvIOdXJCQT4j2dLaGNRBND6iPFOIZESgO_8jx2w9uRpKhZNQ"
+                  class="img-fluid w-100" style="object-fit: cover; height: 200px;" alt="Project 2">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container message">
+        <div class="row">
+          <div class="project-card col-lg-8 col-md-6">
+            <div class="row g-3">
+              <div class="col-6 col-md-6">
+                <label for="exampleFormControlTextarea1">Example text area</label>
+                <input type="text" class="form-control text-muted" placeholder="First name" aria-label="First name" />
+              </div>
+              <div class="col-6 col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control text-muted" placeholder="Last name" aria-label="Last name" />
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control text-muted" id="exampleFormControlTextarea1"
+                  rows="3">what's your message?</textarea>
+              </div>
+              <div class="text-end">
+                <button type="submit" class="btn btn-outline-primary">
+                  Send Message<span class="material-symbols-outlined align-middle"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="project-card col-lg-4 col-md-6">
+            <h3>connect_</h3>
+            <div class="col">
+              <div class="row g-3 p-5">
+                <a href="">Linkedin</a>
+                <a href="">Github</a>
+                <a href="">Instagram</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container py-5 my-5" id="Skills">
+
+        <!-- Heading -->
+        <span class="text-primary fw-bold text-uppercase d-block mb-2" style="font-size: 13px; letter-spacing: 1px;">
+          Technical Proficiency
+        </span>
+        <h2 class="fw-bold mb-3" style="font-size: 2.2rem;">Expertise & Skills</h2>
+        <p class="text-secondary mb-5" style="max-width: 480px;">
+          A clear overview of the languages, frameworks, and architectural tools I
+          leverage to build modern, high-performance software systems.
+        </p>
+
+        <!-- Row 1: Core Languages + Frameworks -->
+        <div class="row g-4 mb-4">
+
+          <!-- Card: Core Languages -->
+          <div class="col-lg-7">
+            <div class="project-card soft-shadow h-100">
+              <h5 class="fw-bold mb-4">
+                <span class="text-primary me-2">&lt;&gt;</span> Core Languages
+              </h5>
               <div class="row g-3">
-                <div class="col-6 col-md-6">
-                  <label for="exampleFormControlTextarea1"
-                    >Example text area</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control text-muted"
-                    placeholder="First name"
-                    aria-label="First name"
-                  />
-                </div>
-                <div class="col-6 col-md-6">
-                  <label for="inputEmail4">Email</label>
-                  <input
-                    type="email"
-                    class="form-control text-muted"
-                    placeholder="Last name"
-                    aria-label="Last name"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Message</label>
-                  <textarea
-                    class="form-control text-muted"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                  >what's your message?</textarea>
-                </div>
-                <div class="text-end">
-                  <button type="submit" class="btn btn-outline-primary">
-                    Send Message<span
-                      class="material-symbols-outlined align-middle"
-                    ></span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="project-card col-lg-4 col-md-6">
-              <h3>connect_</h3>
-              <div class="col">
-                <div class="row g-3 p-5">  
-                  <a href="">Linkedin</a>
-                  <a href="">Github</a>
-                  <a href="">Instagram</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
 
-      <footer class="bg-white border-top py-5">
-        <div class="container d-flex justify-content-between align-items-center gap-4">
-          <div class="text-center text-md-center">
-            <span class="fw-bold d-block">&copy; 2026 M Fajri Budi Kusuma</span>
-            <small class="text-uppercase text-secondary" style="letter-spacing: 1px;">Built with precision</small>
-          </div>
-          <div class="d-flex gap-4">
-            <a href="" class="text-decoration-none text-secondary small fw-bold">Github</a>
-            <a href="" class="text-decoration-none text-secondary small fw-bold">Linkedin</a>
-            <a href="" class="text-decoration-none text-secondary small fw-bold">Instagram</a>
-          </div>
-          <div class="d-flex rounded-pill border align-items-center gap-2 py-2 px-3">
-            <div class="bg-primary rounded-circle">
+                <!-- Skill item: label + persentase + progress bar -->
+                <div class="col-6">
+                  <div class="d-flex justify-content-between mb-1">
+                    <small class="fw-semibold">TypeScript / Node.js</small>
+                    <small class="text-primary fw-bold">95%</small>
+                  </div>
+                  <!-- progress bar Bootstrap -->
+                  <div class="progress" style="height: 4px;">
+                    <div class="progress-bar bg-primary" style="width: 95%"></div>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="d-flex justify-content-between mb-1">
+                    <small class="fw-semibold">Go (Golang)</small>
+                    <small class="text-primary fw-bold">88%</small>
+                  </div>
+                  <div class="progress" style="height: 4px;">
+                    <div class="progress-bar bg-primary" style="width: 88%"></div>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="d-flex justify-content-between mb-1">
+                    <small class="fw-semibold">Python (FastAPI)</small>
+                    <small class="text-primary fw-bold">82%</small>
+                  </div>
+                  <div class="progress" style="height: 4px;">
+                    <div class="progress-bar bg-primary" style="width: 82%"></div>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="d-flex justify-content-between mb-1">
+                    <small class="fw-semibold">Rust</small>
+                    <small class="text-primary fw-bold">65%</small>
+                  </div>
+                  <div class="progress" style="height: 4px;">
+                    <div class="progress-bar bg-primary" style="width: 65%"></div>
+                  </div>
+                </div>
+
+              </div>
             </div>
-            <small class="fw-bold text-primary text-uppercase"> System Operational</small>
+          </div>
+
+          <!-- Card: Frameworks -->
+          <div class="col-lg-5">
+            <div class="project-card soft-shadow h-100">
+              <h5 class="fw-bold mb-4">
+                <!-- unicode diamond icon sederhana -->
+                <span class="text-primary me-2">◈</span> Frameworks
+              </h5>
+              <!-- Badge tech yang sudah ada di proyek kamu -->
+              <div class="d-flex flex-wrap gap-2 mb-4">
+                <span class="badge badge-tech rounded-pill">React.js</span>
+                <span class="badge badge-tech rounded-pill">Next.js</span>
+                <span class="badge badge-tech rounded-pill">Tailwind CSS</span>
+                <span class="badge badge-tech rounded-pill">Redux</span>
+                <span class="badge badge-tech rounded-pill">GraphQL</span>
+                <span class="badge badge-tech rounded-pill">Prisma</span>
+              </div>
+              <hr class="text-secondary opacity-25">
+              <p class="text-secondary fst-italic" style="font-size: 13px;">
+                Focused on building accessible, high-performance student-centric interfaces.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Row 2: Cloud & DevOps + Data Systems -->
+        <div class="row g-4 mb-4">
+
+          <!-- Card: Cloud & DevOps -->
+          <div class="col-lg-5">
+            <div class="project-card soft-shadow h-100">
+              <h5 class="fw-bold mb-4">
+                <span class="text-primary me-2">&lt;&gt;</span> Cloud & DevOps
+              </h5>
+              <div class="row g-3">
+
+                <!-- Item dengan icon Bootstrap Icons -->
+                <div class="col-6">
+                  <div class="d-flex align-items-start gap-2">
+                    <i class="bi bi-cloud text-secondary mt-1"></i>
+                    <div>
+                      <div class="fw-semibold" style="font-size: 14px;">AWS / GCP</div>
+                      <small class="text-secondary">Cloud Architecture</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="d-flex align-items-start gap-2">
+                    <i class="bi bi-box text-secondary mt-1"></i>
+                    <div>
+                      <div class="fw-semibold" style="font-size: 14px;">Docker / K8s</div>
+                      <small class="text-secondary">Containerization</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="d-flex align-items-start gap-2">
+                    <i class="bi bi-diagram-3 text-secondary mt-1"></i>
+                    <div>
+                      <div class="fw-semibold" style="font-size: 14px;">Terraform</div>
+                      <small class="text-secondary">Infrastructure</small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="d-flex align-items-start gap-2">
+                    <i class="bi bi-bar-chart text-secondary mt-1"></i>
+                    <div>
+                      <div class="fw-semibold" style="font-size: 14px;">CI / CD</div>
+                      <small class="text-secondary">Deployment</small>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: Data Systems -->
+          <div class="col-lg-7">
+            <div class="project-card soft-shadow h-100">
+              <h5 class="fw-bold mb-4">
+                <i class="bi bi-server text-primary me-2"></i> Data Systems
+              </h5>
+              <div class="d-flex flex-column gap-3">
+
+                <!-- Item: nama database + badge type -->
+                <div class="d-flex align-items-center justify-content-between border rounded-3 px-3 py-2">
+                  <span class="fw-semibold">PostgreSQL / MySQL</span>
+                  <span class="badge text-uppercase"
+                    style="background-color: #e8f0fe; color: #1a56db; font-size: 10px; letter-spacing: 1px;">Relational</span>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between border rounded-3 px-3 py-2">
+                  <span class="fw-semibold">MongoDB / Redis</span>
+                  <span class="badge text-uppercase"
+                    style="background-color: #e8f0fe; color: #1a56db; font-size: 10px; letter-spacing: 1px;">NoSQL</span>
+                </div>
+
+                <div class="d-flex align-items-center justify-content-between border rounded-3 px-3 py-2">
+                  <span class="fw-semibold">Apache Kafka</span>
+                  <span class="badge text-uppercase"
+                    style="background-color: #e8f0fe; color: #1a56db; font-size: 10px; letter-spacing: 1px;">Streaming</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Card Sertifikasi -->
+        <div class="project-card soft-shadow" style="border-left: 4px solid #0d6efd;">
+          <div class="row align-items-center g-4">
+
+            <!-- Foto kiri -->
+            <div class="col-lg-4">
+              <div class="rounded-3 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600" class="img-fluid w-100"
+                  style="height: 280px; object-fit: cover;" alt="Server room" />
+              </div>
+            </div>
+
+            <!-- Konten kanan -->
+            <div class="col-lg-8">
+              <span class="badge border text-primary fw-bold text-uppercase mb-3"
+                style="font-size: 11px; letter-spacing: 1px; background: #e8f0fe;">
+                Verified Expertise
+              </span>
+              <h3 class="fw-bold mb-4">Professional Certifications</h3>
+
+              <div class="d-flex flex-column gap-3">
+
+                <!-- Item sertifikasi -->
+                <div class="d-flex align-items-center gap-3">
+                  <!-- icon centang lingkaran -->
+                  <i class="bi bi-patch-check text-primary fs-5"></i>
+                  <span class="fw-semibold">AWS Certified Solutions Architect – Professional</span>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <i class="bi bi-patch-check text-primary fs-5"></i>
+                  <span class="fw-semibold">Google Professional Cloud Architect</span>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                  <i class="bi bi-patch-check text-primary fs-5"></i>
+                  <span class="fw-semibold">Certified Kubernetes Administrator (CKA)</span>
+                </div>
+
+              </div>
+            </div>
+
           </div>
         </div>
-      </footer>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"></script>
-  </body>
+
+      </section>
+
+
+
+    </main>
+
+    <footer class="bg-white border-top py-5">
+      <div class="container d-flex justify-content-between align-items-center gap-4">
+        <div class="text-center text-md-center">
+          <span class="fw-bold d-block">&copy; 2026 M Fajri Budi Kusuma</span>
+          <small class="text-uppercase text-secondary" style="letter-spacing: 1px;">Built with precision</small>
+        </div>
+        <div class="d-flex gap-4">
+          <a href="" class="text-decoration-none text-secondary small fw-bold">Github</a>
+          <a href="" class="text-decoration-none text-secondary small fw-bold">Linkedin</a>
+          <a href="" class="text-decoration-none text-secondary small fw-bold">Instagram</a>
+        </div>
+        <div class="d-flex rounded-pill border align-items-center gap-2 py-2 px-3">
+          <div class="bg-primary rounded-circle">
+          </div>
+          <small class="fw-bold text-primary text-uppercase"> System Operational</small>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
